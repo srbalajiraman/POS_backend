@@ -1,0 +1,33 @@
+{
+  "name": "pos_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node index.js",
+    "migrate": "npx knex migrate:latest --knexfile ./db/kenxfile.js",
+    "make-seed": "npx knex seed:make dev --knexfile ./db/kenxfile.js",
+    "seed": "npx knex seed:run --knexfile ./db/kenxfile.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "nodemon": "^3.1.4",
+    "objection": "^3.1.4",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7"
+  }
+}
