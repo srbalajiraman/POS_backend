@@ -15,5 +15,4 @@ routes.get("/get", async (req, res) => {
 })
 
 
-// module.exports = routes
 export { routes as HomeRoutes }
